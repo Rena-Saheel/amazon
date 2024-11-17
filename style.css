@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    height: 60px;
+    height: auto;
     background-color: #0f1111;
     color: white;
     display: flex;
@@ -54,7 +54,7 @@
 .nav-search {
     display: flex;
     justify-content: space-evenly;
-    background-color: pink;
+    background-color: white;
     width: 620px;
     height: 40px;
     border-radius: 4px;
@@ -273,4 +273,77 @@ ul a {
 
 .copyright {
     padding-top: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+
+    .nav-logo {
+        width: 80px;
+        height: 50px;
+        margin-bottom: 2px;
+    }
+
+    .nav-search {
+        flex-direction: row;
+        height: auto;
+        width: 95%;
+    }
+
+    .search-input {
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+    }
+
+    .search-icon {
+        font-size: 1rem;
+    }
+
+    .shop-section .box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .panel-ops {
+        width: 100%;
+        text-align: center;
+        font-size: 0.75rem;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+    }
+
+    .panel-deals {
+        font-size: 0.75rem;
+        margin-left:12px;
+    }
+
+    footer .foot-panel2 {
+        flex-direction: column;
+        padding: 10px;
+        width:auto;
+        height: auto;
+        line-height:1.5;
+    }
+
+    .foot-panel2 ul {
+        text-align: center;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .hero-msg {
+        font-size: 0.75rem;
+        width: 95%;
+        padding:3px;
+        line-height: 1.3;
+    }
 }
